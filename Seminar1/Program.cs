@@ -4,12 +4,18 @@ int numberA = int.Parse(inputA);
 Console.Write("Введите число b = ");
 string inputB = Console.ReadLine();
 int numberB = int.Parse(inputB);
-if (numberA > numberB) {
-    Console.WriteLine($"Число a = {numberA} больше");
+Console.Write("Введите число c = ");
+string inputC = Console.ReadLine();
+int numberC = int.Parse(inputC);
+var max = numberA;
+
+if (max < numberB)
+{
+    max = numberB;
 }
-if (numberA < numberB) {
-    Console.WriteLine($"Число b = {numberB} больше");
+if (max < numberC)
+{
+    max = numberC;
 }
-if (numberA == numberB) {
-    Console.WriteLine("Числа равны");
-}
+
+Console.WriteLine($"Самое большое число {max}");
