@@ -1,21 +1,10 @@
-﻿Console.Write("Введите число a = ");
-string inputA = Console.ReadLine();
-int numberA = int.Parse(inputA);
-Console.Write("Введите число b = ");
-string inputB = Console.ReadLine();
-int numberB = int.Parse(inputB);
-Console.Write("Введите число c = ");
-string inputC = Console.ReadLine();
-int numberC = int.Parse(inputC);
-var max = numberA;
+﻿Console.Write("Введите число ");
+string input = Console.ReadLine();
+int number = int.Parse(input);
 
-if (max < numberB)
+if (number % 2 == 0)
 {
-    max = numberB;
+    Console.WriteLine("Число четное");
+} else {
+    Console.WriteLine("Число нечетное");
 }
-if (max < numberC)
-{
-    max = numberC;
-}
-
-Console.WriteLine($"Самое большое число {max}");
