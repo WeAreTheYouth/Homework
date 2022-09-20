@@ -8,3 +8,7 @@ else if (number > 5 && number < 8)
 {
     Console.WriteLine("Выходной день");
 }
+else
+{
+    
+}
