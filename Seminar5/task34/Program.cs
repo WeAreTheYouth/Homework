@@ -8,7 +8,6 @@ Console.WriteLine($"Четных чисел в массиве {CalcSum(array)}")
 int[] CreateArray(int size)
 {
     int[] array = new int[size];
-
     for (int i = 0; i < array.Length; i++)
     {
         array[i] = new Random().Next(100, 1000);
