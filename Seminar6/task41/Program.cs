@@ -1,19 +1,20 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
-int[] numbers = CreateArray();
+int[] numbers = InputNumbersArray();
 PrintArray(numbers);
 Console.WriteLine($"Чисел больше нуля {GetSum(numbers)}");
 
-
-int[] CreateArray()
+int[] InputNumbersArray()
 {
-    int[] array = new int[8];
-    for (int i = 0; i < array.Length; i++)
+    Console.WriteLine("Введите числа через пробел");
+    string line = Console.ReadLine();
+    string[] parts = line.Split(' ');
+    int[] numbers = new int[parts.Length];
+    for (int i = 0; i < numbers.Length; i++)
     {
-        Console.WriteLine($"Введите число: ");
-        array[i] = int.Parse(Console.ReadLine());
+        numbers[i] = int.Parse(parts[i]);
     }
-    return array;
+    return numbers;
 }
 
 void PrintArray(int[] arr)
