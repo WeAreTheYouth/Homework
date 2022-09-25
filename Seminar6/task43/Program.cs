@@ -16,7 +16,7 @@ if (k1 == k2 && b1 == b2)
 }
 else if (k1 == k2)
 {
-    Console.WriteLine("Прямые паралельны");
+    Console.WriteLine("Прямые параллельны");
 }
 else
 {
